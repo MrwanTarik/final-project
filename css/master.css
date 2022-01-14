@@ -206,8 +206,9 @@ position: relative;
     left: -20px;
   }
   .red-shape span {
+    text-transform: uppercase;
     text-align: center;
-    padding: 5px 8px;
+    padding: 5px 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -247,7 +248,7 @@ position: relative;
     width: 100%;
   }
   .blue-layer {
-    font-size: 12px;
+    font-size: 15px;
     padding: 7px 10px 5px 10px;
     position: absolute;
     background-color: #1569f88a;
@@ -280,6 +281,8 @@ position: relative;
     .blue-layer {
       padding: 5px 10px 5px 10px;
       border-radius: 10px;
+      padding: 20px;
+      font-size: 22px;
     }
     .blue-layer span img{
       width: 9px;
@@ -288,6 +291,14 @@ position: relative;
       width: 11px;
     }
   }
+  @media (max-width: 567px){
+    .blue-layer {
+      padding: 5px 10px 5px 10px;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 17px;
+    }
+  } 
   .rounded-box {
     margin: 30px 0;
     border-radius: 50px;
@@ -365,7 +376,7 @@ position: relative;
     align-items: center;
   }
   .box img {
-    border-radius: 50%;
+    border: 8px solid #015085;
     width: 156px;
     height: 156px;
     padding: 0;
@@ -379,10 +390,13 @@ position: relative;
       color: black;
       border-bottom: 1px solid black;
   }
+  
+  
   .box .text h3 {
     font-size: 17px;
     line-height: 15px;
     color: #015085;
+    margin-bottom:-6px ;
     font-weight: bold;
     font-family: "gestaw01-regularregular";
   }
@@ -459,6 +473,10 @@ position: relative;
       font-size: 20px;
     }
   }
+  .hears-p{
+    font-size: 17px;
+    font-weight: bold;
+  }
   .pagination {
     background-size: 100% 100%;
     background-image: url(/img/texture.png);
@@ -508,6 +526,50 @@ position: relative;
     width: calc(80% - 60px);
     padding: 15px;
 }
+
+@media(min-width:768px){
+  .cards {
+    margin-left: 36px;
+  }
+  .left-box .phanos {
+    left: 19px;
+}
+}
+@media(min-width:840px){
+  .cards {
+    margin-left: 34px;
+  }
+  .left-box .phanos {
+    left: 19px;
+}
+}
+@media(min-width:991px){
+  .cards {
+    margin-left: 32px;
+  }
+  .left-box .phanos {
+    left: 19px;
+}
+}
+
+@media(min-width:991px){
+  .cards {
+    margin-left: 32px;
+  }
+  .left-box .phanos {
+    left: 19px;
+}
+}
+@media(min-width:1220px){
+  .cards {
+    margin-left: 36px;
+  }
+  .left-box .phanos {
+    left: 19px;
+}
+}
+
+
 
 .cards .card:nth-of-type(2){
   padding-top: 20px; padding-bottom: 20px;
@@ -646,5 +708,31 @@ position: relative;
 @media(max-width:768px){
   .cards .card .img-holder .pp {
     width: 250px;
+  }
+}
+@media(min-width:768px){
+  .colum-8 {
+    left: 36px;
+  }
+  .colum-4 {
+    left: -9px;
+  }
+}
+@media (min-width: 1200px){
+
+.colum-4 {
+    left: -14px;
+}
+  
+}
+@media (max-width: 768px){
+  .container {
+    max-width: 533px;
+  }
+}
+@media(max-width:567px){
+  #news > div > div > div.col-md-8.colum-8.right-box > div.main-page > div.d7l-section > div.container > div > div.photos {
+    width: 94%;
+    margin: auto;
   }
 }
